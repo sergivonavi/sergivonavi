@@ -42,24 +42,19 @@
 <a href="https://www.atlassian.com/software/jira"><img src="/icons/jira.svg" alt="Jira" style="width:5%;"></a>
 <a href="https://www.postman.com/"><img src="/icons/postman.svg" alt="Postman" style="width:5%;"></a>
 
-<a href="https://github.com/"><img src="/icons/github.svg" alt="GitHub" style="width:5%;"></a>
-<a href="https://gitlab.com/"><img src="/icons/gitlab.svg" alt="GitLab" style="width:5%;"></a>
-
 ## My Projects
 
 ### Test Automation
 
-[![azbooka-at](https://github-readme-stats.vercel.app/api/pin/?username=NeverFlyDog&repo=azbooka-at&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/azbooka-at)
-[![wikipedia-android-at](https://github-readme-stats.vercel.app/api/pin/?username=NeverFlyDog&repo=wikipedia-android-at&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/wikipedia-android-at)
+![azbooka-at](https://github-readme-stats.vercel.app/api/pin/?username=sergivonavi&theme=nightowl&repo=azbooka-at&hide_border=true) 
+![wikipedia-android-at](https://github-readme-stats.vercel.app/api/pin/?username=sergivonavi&theme=nightowl&repo=wikipedia-android-at&hide_border=true)
 
 ### Android 
 
-[![MaterialBanner](https://github-readme-stats.vercel.app/api/pin/?username=sergivonavi&repo=MaterialBanner&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/MaterialBanner)
+[![MaterialBanner](https://github-readme-stats.vercel.app/api/pin/?username=sergivonavi&theme=nightowl&repo=MaterialBanner&hide_border=true)](https://github.com/sergivonavi/MaterialBanner)
 
 ## Stats
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sergivonavi&theme=tokyonight" alt="Profile Details">
+![Profile details](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sergivonavi&theme=nightowl)
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sergivonavi&theme=tokyonight" alt="Stats"> <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sergivonavi&theme=tokyonight" alt="Repos Per Language">
-
-[//]: # (  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sergivonavi&theme=tokyonight" alt="Most Commit Language">)
+![General stats](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=sergivonavi&theme=nightowl) ![Top languages by repo](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sergivonavi&theme=nightowl)
