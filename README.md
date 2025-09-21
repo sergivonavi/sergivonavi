@@ -49,8 +49,8 @@
 
 ### Test Automation
 
-[![azbooka-at](https://github-readme-stats.vercel.app/api/pin/?username=sergivonavi&repo=azbooka-at&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/azbooka-at)
-[![wikipedia-android-at](https://github-readme-stats.vercel.app/api/pin/?username=sergivonavi&repo=wikipedia-android-at&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/wikipedia-android-at)
+[![azbooka-at](https://github-readme-stats.vercel.app/api/pin/?username=NeverFlyDog&repo=azbooka-at&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/azbooka-at)
+[![wikipedia-android-at](https://github-readme-stats.vercel.app/api/pin/?username=NeverFlyDog&repo=wikipedia-android-at&theme=tokyonight&hide_border=true)](https://github.com/sergivonavi/wikipedia-android-at)
 
 ### Android 
 
