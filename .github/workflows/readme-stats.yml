@@ -1,11 +1,10 @@
 name: GitHub Readme Stats
+
 on:
-  workflow_dispatch:
+  create:
   schedule:
-    - cron: 0 * * * *
-  push:
-    branches:
-      - master
+    - cron: "* * */01 * *"
+  workflow_dispatch:
 
 jobs:
   generate-langs:
