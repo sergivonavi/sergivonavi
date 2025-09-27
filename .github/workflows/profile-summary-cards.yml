@@ -21,4 +21,4 @@ jobs:
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: "profile-summary-cards"
-          EXCLUDE: "html,freemarker"
+          EXCLUDE: "HTML,FreeMarker"

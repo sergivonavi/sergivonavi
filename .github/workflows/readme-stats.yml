@@ -104,7 +104,7 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     name: Push
-    needs: [generate-langs, generate-pin-material-banner]
+    needs: [generate-langs, generate-pin-material-banner, generate-pin-azbooka-at, generate-pin-wikipedia-android-at]
     steps:
       # languages
       - uses: actions/download-artifact@v4
