@@ -9,9 +9,9 @@
 
 ## Stack
 
-Languages: Java, Kotlin, JavaScript, SQL, Lua
-Frameworks: Selenide, JUnit 5, REST Assured
-Tools: Postman, Gradle, Maven, Git, Jenkins, Selenoid, Appium, Allure Reports, Allure TestOps, YouTrack, Jira
+* Languages: Java, Kotlin, JavaScript, SQL, Lua
+* Frameworks: Selenide, JUnit 5, REST Assured
+* Tools: Postman, Gradle, Maven, Git, Jenkins, Selenoid, Appium, Allure Reports, Allure TestOps, YouTrack, Jira
 
 ## My Projects
 
