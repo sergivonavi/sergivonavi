@@ -4,14 +4,14 @@
 
 * Experienced QA Engineer, specializing in manual API and UI web testing.
 * Skilled in designing and executing test cases, identifying edge scenarios, and ensuring high product quality.
-* Some experience in mobile (Android) and web development.
+* Some experience in mobile (Android) and web development, including implementation and maintenance of unit tests.
 * Currently expanding expertise in test automation with Java and Selenide.
 
 ## Stack
 
-* Languages: Java, Kotlin, JavaScript, SQL, Lua
+* Languages: Java, Kotlin, JavaScript, Lua, SQL
 * Frameworks: JUnit 5, Selenide, REST Assured
-* Tools: Postman, Gradle, Maven, Git, Jenkins, Selenoid, Appium, Allure Reports, Allure TestOps, YouTrack, Jira
+* Tools: Postman, Gradle, Maven, Git, Jenkins, Selenoid, Appium, Allure Report, Allure TestOps, YouTrack, Jira
 
 ## My Projects
 
