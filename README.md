@@ -9,8 +9,9 @@
 
 ## Stack
 
-* Languages: Java, Kotlin, JavaScript, Lua, SQL
+* Languages: Java, Kotlin, JavaScript, Lua
 * Frameworks: JUnit 5, Selenide, REST Assured
+* Databases: PostgreSQL, MongoDB, SQLite
 * Tools: Postman, Gradle, Maven, Git, Jenkins, Selenoid, Appium, Allure Report, Allure TestOps, YouTrack, Jira
 
 ## My Projects
