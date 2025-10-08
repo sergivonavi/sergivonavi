@@ -1,0 +1,118 @@
+name: GitHub Readme Stats
+
+on:
+  create:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate-pin-material-banner:
+    strategy:
+      matrix:
+        config:
+          - { mode: light, theme: graywhite }
+          - { mode: dark, theme: react }
+    runs-on: ubuntu-latest
+    name: Generate MaterialBanner card
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Generate pin-${{ matrix.config.mode }}
+        uses: UlyssesZh/grs-action@master
+        id: generate
+        with:
+          options: username=${{ github.repository_owner }}&repo=MaterialBanner&show_owner=true&description_lines_count=2&hide_border=true&disable_animations=false&theme=${{ matrix.config.theme }}
+          path: readme-stats/repo-material-banner-${{ matrix.config.mode }}.svg
+          card: repo
+      - name: Upload repo-material-banner-${{ matrix.config.mode }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-material-banner-${{ matrix.config.mode }}
+          path: readme-stats
+  generate-pin-azbooka-at:
+    strategy:
+      matrix:
+        config:
+          - { mode: light, theme: graywhite }
+          - { mode: dark, theme: react }
+    runs-on: ubuntu-latest
+    name: Generate azbooka-at card
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Generate pin-${{ matrix.config.mode }}
+        uses: UlyssesZh/grs-action@master
+        id: generate
+        with:
+          options: username=${{ github.repository_owner }}&repo=azbooka-at&show_owner=true&description_lines_count=2&hide_border=true&disable_animations=false&theme=${{ matrix.config.theme }}
+          path: readme-stats/repo-azbooka-at-${{ matrix.config.mode }}.svg
+          card: repo
+      - name: Upload repo-azbooka-at-${{ matrix.config.mode }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-azbooka-at-${{ matrix.config.mode }}
+          path: readme-stats
+  generate-pin-wikipedia-android-at:
+    strategy:
+      matrix:
+        config:
+          - { mode: light, theme: graywhite }
+          - { mode: dark, theme: react }
+    runs-on: ubuntu-latest
+    name: Generate wikipedia-android-at card
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Generate pin-${{ matrix.config.mode }}
+        uses: UlyssesZh/grs-action@master
+        id: generate
+        with:
+          options: username=${{ github.repository_owner }}&repo=wikipedia-android-at&show_owner=true&description_lines_count=2&hide_border=true&disable_animations=false&theme=${{ matrix.config.theme }}
+          path: readme-stats/repo-wikipedia-android-at-${{ matrix.config.mode }}.svg
+          card: repo
+      - name: Upload repo-wikipedia-android-at-${{ matrix.config.mode }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-wikipedia-android-at-${{ matrix.config.mode }}
+          path: readme-stats
+  push:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Push
+    needs: [generate-pin-material-banner, generate-pin-azbooka-at, generate-pin-wikipedia-android-at]
+    steps:
+      # material-banner
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-material-banner-dark
+          path: readme-stats
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-material-banner-light
+          path: readme-stats
+      # azbooka-at
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-azbooka-at-dark
+          path: readme-stats
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-azbooka-at-light
+          path: readme-stats
+      # wikipedia-android-at
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-wikipedia-android-at-dark
+          path: readme-stats
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-wikipedia-android-at-light
+          path: readme-stats
+      - name: Push
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: readme-stats
+          build_dir: readme-stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
