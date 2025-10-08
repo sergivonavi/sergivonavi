@@ -11,8 +11,8 @@ jobs:
     strategy:
       matrix:
         config:
-          - { mode: light, theme: graywhite }
-          - { mode: dark, theme: react }
+          - { mode: light, theme: vue, hide_border: false }
+          - { mode: dark, theme: react, hide_border: true }
     runs-on: ubuntu-latest
     name: Generate MaterialBanner card
     steps:
@@ -22,7 +22,7 @@ jobs:
         uses: UlyssesZh/grs-action@master
         id: generate
         with:
-          options: username=${{ github.repository_owner }}&repo=MaterialBanner&show_owner=true&description_lines_count=2&hide_border=true&disable_animations=false&theme=${{ matrix.config.theme }}
+          options: username=${{ github.repository_owner }}&repo=MaterialBanner&show_owner=true&description_lines_count=2&${{ matrix.config.hide_border }}&disable_animations=false&theme=${{ matrix.config.theme }}
           path: readme-stats/repo-material-banner-${{ matrix.config.mode }}.svg
           card: repo
       - name: Upload repo-material-banner-${{ matrix.config.mode }}
@@ -45,7 +45,7 @@ jobs:
         uses: UlyssesZh/grs-action@master
         id: generate
         with:
-          options: username=${{ github.repository_owner }}&repo=azbooka-at&show_owner=true&description_lines_count=2&hide_border=true&disable_animations=false&theme=${{ matrix.config.theme }}
+          options: username=${{ github.repository_owner }}&repo=azbooka-at&show_owner=true&description_lines_count=2&${{ matrix.config.hide_border }}&disable_animations=false&theme=${{ matrix.config.theme }}
           path: readme-stats/repo-azbooka-at-${{ matrix.config.mode }}.svg
           card: repo
       - name: Upload repo-azbooka-at-${{ matrix.config.mode }}
@@ -68,7 +68,7 @@ jobs:
         uses: UlyssesZh/grs-action@master
         id: generate
         with:
-          options: username=${{ github.repository_owner }}&repo=wikipedia-android-at&show_owner=true&description_lines_count=2&hide_border=true&disable_animations=false&theme=${{ matrix.config.theme }}
+          options: username=${{ github.repository_owner }}&repo=wikipedia-android-at&show_owner=true&description_lines_count=2&${{ matrix.config.hide_border }}&disable_animations=false&theme=${{ matrix.config.theme }}
           path: readme-stats/repo-wikipedia-android-at-${{ matrix.config.mode }}.svg
           card: repo
       - name: Upload repo-wikipedia-android-at-${{ matrix.config.mode }}

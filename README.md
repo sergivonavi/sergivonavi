@@ -69,10 +69,10 @@
     media="(prefers-color-scheme: dark)"
   />
   <source
-    srcset="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/graywhite/0-profile-details.svg"
+    srcset="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/vue/0-profile-details.svg"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
-  <img src="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/graywhite/0-profile-details.svg" />
+  <img src="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/vue/0-profile-details.svg" />
 </picture>
 
 
@@ -82,10 +82,10 @@
     media="(prefers-color-scheme: dark)"
   />
   <source
-    srcset="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/graywhite/3-stats.svg"
+    srcset="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/vue/3-stats.svg"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
-  <img src="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/graywhite/3-stats.svg" />
+  <img src="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/vue/3-stats.svg" />
 </picture>
 
 
@@ -95,8 +95,8 @@
     media="(prefers-color-scheme: dark)"
   />
   <source
-    srcset="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/graywhite/1-repos-per-language.svg"
+    srcset="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/vue/1-repos-per-language.svg"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
-  <img src="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/graywhite/1-repos-per-language.svg" />
+  <img src="https://raw.githubusercontent.com/sergivonavi/sergivonavi/refs/heads/master/profile-summary-card-output/vue/1-repos-per-language.svg" />
 </picture>
