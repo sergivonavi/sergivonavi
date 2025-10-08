@@ -34,8 +34,8 @@ jobs:
     strategy:
       matrix:
         config:
-          - { mode: light, theme: graywhite }
-          - { mode: dark, theme: react }
+          - { mode: light, theme: vue, hide_border: false }
+          - { mode: dark, theme: react, hide_border: true }
     runs-on: ubuntu-latest
     name: Generate azbooka-at card
     steps:
@@ -57,8 +57,8 @@ jobs:
     strategy:
       matrix:
         config:
-          - { mode: light, theme: graywhite }
-          - { mode: dark, theme: react }
+          - { mode: light, theme: vue, hide_border: false }
+          - { mode: dark, theme: react, hide_border: true }
     runs-on: ubuntu-latest
     name: Generate wikipedia-android-at card
     steps:
